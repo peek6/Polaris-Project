@@ -13,7 +13,7 @@ This tutorial walks you through the process of modding meshes in *Tekken 8*, inc
 - [grepWin](https://github.com/stefankueng/grepWin) for quick searching.
 - [Umodel (Tekken 8-specific version)](https://www.nexusmods.com/tekken8/mods/435?tab=files&file_id=1192) for exporting meshes as gltf with all weights.  Note that fmodel does not support exporting meshes with all weights, which will lead to neck gaps in-game, so always use umodel for exporting Tekken 8 meshes. Credit to [Gildor](https://www.gildor.org/en/projects/umodel) for Umodel.
 - Blender (recommended version 3.6 LTS) from Microsoft Store. 
-- [gltf import plugin for UE](https://cdn.discordapp.com/attachments/1135985731639181392/1203754525119488010/io_scene_gltf2_ue4.zip?ex=6738d6c3&is=67378543&hm=ff256b4188eb7ceb2f4b25ef501f5bb79264f7841c0fbe7eb58adcb37036b88b&) for importing/exporting GLTFs.
+- [gltf import plugin for UE](https://www.nexusmods.com/tekken8/mods/435?tab=files&file_id=1216) for importing/exporting GLTFs.
 - [Matya FBX export plugin](https://github.com/matyalatte/blender3d_import_psk_psa/releases) for exporting your modded meshes from Blender so that they can be correctly imported into UE.
 - [Custom UE 5.2 engine for Tekken 8](https://drive.google.com/drive/folders/1TUmRc7qTq1xTUkGcWnPz6-2KuA4RTPOf) is the custom unreal engine version required for packaging Tekken 8 mods
 - [Custom Tekken 8 Project , mm_mi_tex branch](https://github.com/peek6/Polaris-Project/tree/mm_mi_tex) is the custom project which is already set up with all the Tekken 8 custom datatypes.  Use the mm_mi_tex branch to have all MIs already set up for you, pointing to dummy master materials and dummy textures.
