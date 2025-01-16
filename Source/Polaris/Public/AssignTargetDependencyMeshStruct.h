@@ -17,6 +17,9 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool IsMainMeshVisiblity;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    int32 Priority;
+
     FAssignTargetDependencyMeshStruct();
 };
 

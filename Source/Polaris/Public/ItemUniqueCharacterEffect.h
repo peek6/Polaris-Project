@@ -1,5 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EffectUserParameterInt.h"
 #include "ItemUniqueCharacterEffect.generated.h"
 
 class UNiagaraSystem;
@@ -31,6 +32,9 @@ public:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool isPlaySound;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    FEffectUserParameterInt UserParameterInt;
     
     FItemUniqueCharacterEffect();
 };

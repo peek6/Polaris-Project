@@ -22,10 +22,14 @@ UBaseItem::UBaseItem() {
     this->CopyExtraItemNum = 0;
     this->ItemBaseClass = NULL;
     this->DropItemBaseClass = NULL;
+	//this->DropItemDependencyMeshIndexArray = NULL;
+	//this->DropItemInfo = NULL;
     this->HairScalpMask = NULL;
     this->isCommonItem = false;
-    this->IsDisableMouse = false;
+    this->IsDisableMouse = true;
     this->IsEnableFresnelOff = false;
+	//this->MotionOverrideDatas = NULL;
+	this->SourceSkinTintColorCustomMaterial = NULL;
 }
 
 

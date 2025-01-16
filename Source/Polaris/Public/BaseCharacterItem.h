@@ -4,6 +4,7 @@
 #include "UObject/NoExportTypes.h"
 #include "AssignTargetDependencyMeshStruct.h"
 #include "DependencyMeshOffsetMapStruct.h"
+#include "OverrideAssignTargetDependencyMeshStruct.h"
 #include "SqueezeInfoStruct.h"
 #include "BaseCharacterItem.generated.h"
 
@@ -34,6 +35,9 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FAssignTargetDependencyMeshStruct> AssignTargetDependencyMeshArray;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    TArray<FOverrideAssignTargetDependencyMeshStruct> OverrideAssignTargetDependencyMeshArray;
+
     UBaseCharacterItem();
 
 };

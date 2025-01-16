@@ -6,5 +6,6 @@ UENUM(BlueprintType)
 enum class ESkinType : uint8 {
     E_SkinType_Default,
     E_SkinType_Devil,
+    E_SkinType_Custom
 };
 

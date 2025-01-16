@@ -6,6 +6,7 @@
 #include "UObject/NoExportTypes.h"
 #include "ClothCollision.h"
 #include "DependencySkeletalMeshRigSet.h"
+#include "DropItemInfoStruct.h"
 #include "DynamicBoneDataStruct.h"
 #include "EMeshType.h"
 #include "ItemAddAuraEffect.h"
@@ -27,6 +28,7 @@ class UCatwalkClothLcjOverrideAsset;
 class UClothOverrideCollisionDataAsset;
 class UClothOverrideLcjDataAsset;
 class UGFurAsset;
+class UMaterialInterface;
 class UParentConstraintBinary;
 class UPhoenixSkeletonBinary;
 class UPolarisCharacterMotionOverrideData;
@@ -169,6 +171,9 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<int32> DropItemDependencyMeshIndexArray;
     
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FDropItemInfoStruct DropItemInfo;
+	
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UTexture* HairScalpMask;
     
@@ -187,6 +192,9 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UPolarisCharacterMotionOverrideData*> MotionOverrideDatas;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    TSoftObjectPtr<UMaterialInterface> SourceSkinTintColorCustomMaterial;
+
     UBaseItem();
 
 };

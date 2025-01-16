@@ -25,7 +25,7 @@ public:
     float MaxAngleLimitHorizon;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float goalStrength;
+    float GoalStrength;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float gravityScale;

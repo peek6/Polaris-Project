@@ -6,7 +6,7 @@ FDynamicBoneParam::FDynamicBoneParam() {
     this->MaxAngleLimitVertical = 0.00f;
     this->MinAngleLimitHorizon = 0.00f;
     this->MaxAngleLimitHorizon = 0.00f;
-    this->goalStrength = 0.00f;
+    this->GoalStrength = 0.00f;
     this->gravityScale = 0.00f;
     this->fakeFrictionRateBust = 0.00f;
     this->goalStrengthCoefBust = 0.00f;

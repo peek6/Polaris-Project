@@ -5,5 +5,7 @@ FSqueezeInfoStruct::FSqueezeInfoStruct() {
     this->ExistSkeletalMesh = NULL;
     this->SqueezeBoneAsset = NULL;
     this->IsClothDisable = false;
+    this->IsOverrideUniqueBCI = false;
+    this->ReleaseVersion = 0;
 }
 
