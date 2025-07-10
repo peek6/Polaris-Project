@@ -1,6 +1,7 @@
 #include "CustomizeItem.h"
 
 UCustomizeItem::UCustomizeItem() {
+    this->UseHairMaterial = false;
     this->ItemOffsetSlotNameEdit = TEXT("POS_NONE");
 }
 

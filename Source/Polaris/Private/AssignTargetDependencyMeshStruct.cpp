@@ -4,5 +4,6 @@ FAssignTargetDependencyMeshStruct::FAssignTargetDependencyMeshStruct() {
     this->TargetMeshPos = 0;
     this->IsMainMeshVisiblity = false;
     this->Priority = 0;
+    this->ReleaseVersion = 0;
 }
 
