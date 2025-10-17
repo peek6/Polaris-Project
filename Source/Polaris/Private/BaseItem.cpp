@@ -12,6 +12,7 @@ UBaseItem::UBaseItem() {
     this->CatwalkClothLcjOverrideAssetItem = NULL;
     this->CatwalkClothLcjOverrideDataAsset = NULL;
     this->RBANCollisionAssetItem = NULL;
+    this->RBANCollisionAssetItemExtra = NULL;
     this->IsCreateMaterialInstanceDynamic = true;
     this->IsAbility = false;
     this->AbilityMissileClass = NULL;

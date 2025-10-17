@@ -1,5 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "DynamicBoneBoneOverrideDataStruct.h"
 #include "DynamicBoneVariationStruct.h"
 #include "DynamicBoneDataStruct.generated.h"
 
@@ -20,6 +21,12 @@ public:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float ResetDeltaTimeMul;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool IsDontScaleBoneLocalTranslate;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    TArray<FDynamicBoneBoneOverrideDataStruct> DynamicBoneBoneOverrideData;
     
     FDynamicBoneDataStruct();
 };

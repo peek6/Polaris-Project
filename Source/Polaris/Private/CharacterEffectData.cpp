@@ -5,6 +5,8 @@ FCharacterEffectData::FCharacterEffectData() {
     this->BluePrintAsset = NULL;
     this->BlueprintLifeSpan = 0.00f;
     this->isAttachedCharacter = false;
+    this->isSelfRotation = false;
+    this->isSelfRotationAndAttachCharacter = false;
     this->isDispUI = false;
     this->isGetAitePosition = false;
     this->SortPriority = 0;

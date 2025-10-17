@@ -5,5 +5,6 @@ FAssignPerMaterialStruct::FAssignPerMaterialStruct() {
     this->MaterialAssign_Override = NULL;
     this->isUseSourceMaterial_All = false;
     this->isEditUser_All = false;
+	this->ChangeAltSkinColor = false;
 }
 

@@ -5,6 +5,7 @@ UAuraCharacterItem::UAuraCharacterItem() {
     this->isCommonItem = false;
     this->DebugEffectItem = NULL;
     this->isExclusive = true;
+	this->isDispUI = false;
 }
 
 

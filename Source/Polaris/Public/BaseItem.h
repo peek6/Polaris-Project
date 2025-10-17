@@ -98,6 +98,9 @@ public:
     UPhysicsAsset* RBANCollisionAssetItem;
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    UPhysicsAsset* RBANCollisionAssetItemExtra;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
     bool IsCreateMaterialInstanceDynamic;
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
