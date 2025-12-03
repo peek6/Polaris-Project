@@ -14,6 +14,10 @@ APolarisEffectManager::APolarisEffectManager(const FObjectInitializer& ObjectIni
     this->m_pPolarisNiagaraActorManager = NULL;
 }
 
+void APolarisEffectManager::SetReplayJumpFlag(bool is_jump) {
+}
+
+
 void APolarisEffectManager::SetParticleAssetNameHash(UNiagaraSystem* Asset) {
 }
 
@@ -29,12 +33,12 @@ void APolarisEffectManager::SetDummyTick(const int32 tick_count, const float del
 void APolarisEffectManager::SetChangeFloorFlag(bool is_change_floor) {
 }
 
+
 void APolarisEffectManager::ResetParticle() {
 }
 
 void APolarisEffectManager::ResetAllFlag() {
 }
-
 
 
 UNiagaraComponent* APolarisEffectManager::ReqNiagaraScalingAttached_Implementation(UNiagaraSystem* SystemTemplate, USceneComponent* AttachToComponent, FName AttachPointName, FVector Location, FRotator Rotation, FVector Scale, EAttachLocation::Type LocationType, bool bAutoDestroy, bool bAutoSound) {
@@ -51,11 +55,25 @@ UNiagaraComponent* APolarisEffectManager::ReqNiagaraAtLocation_Implementation(co
 
 
 
+void APolarisEffectManager::OnReplayJumpEvent() {
+}
+
+void APolarisEffectManager::OnChangeAnotherWorld(FEventOnChangeAnotherWorldParam Param) {
+}
+
 void APolarisEffectManager::KeyOnSoundbyNiagaraAsset(const FVector& position, UNiagaraSystem* Asset) {
 }
 
 APolarisStageEffectManager* APolarisEffectManager::GetStageEffectManager() {
     return NULL;
+}
+
+FName APolarisEffectManager::GetPositionNameFromID(const EEffectPositionId ID) {
+    return NAME_None;
+}
+
+EEffectPositionId APolarisEffectManager::GetPositionIDFromName(const FName& bone_name) {
+    return EEffectPositionId::core;
 }
 
 
@@ -83,7 +101,9 @@ bool APolarisEffectManager::GetChangeFloorFlag() {
     return false;
 }
 
-void APolarisEffectManager::AddParticle(UNiagaraComponent* particlem, bool over_count_check) {
+void APolarisEffectManager::GetBattleEffect(TArray<UNiagaraComponent*>& niagara_components, TArray<UPolarisTraceComponent*>& trace_components, bool is_get_stage_battle_effect) {
 }
 
+void APolarisEffectManager::AddParticle(UNiagaraComponent* particlem, bool over_count_check) {
+}
 

@@ -65,6 +65,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     static void SetResolutionUpscaling(EPolarisResolutionUpscaling upscaling);
+
+    UFUNCTION(BlueprintCallable)
+    static void SetRequestTrace(const int32& player_id, const int32& param_a, const int32& param_b, const int32& param_c, const int32& param_d);
     
     UFUNCTION(BlueprintCallable)
     static void SetForceMipLevelsToBeResident(UTexture2D* pTex, float Second);

@@ -6,6 +6,8 @@ UBaseItem::UBaseItem() {
     this->SourceSkeletalMeshSetArray.AddDefaulted(33);
     this->SourceBasePartsMeshItem = NULL;
     this->IsCastContactShadow = true;
+    this->IsGlassesEyeBlashOpacityZero_L = false;
+    this->IsGlassesEyeBlashOpacityZero_R = false;
     this->CatwalkClothCollisionAssetItem = NULL;
     this->CatwalkClothCollisionOverrideDataAsset = NULL;
     this->CatwalkClothCollisionAttachmentDataAsset = NULL;

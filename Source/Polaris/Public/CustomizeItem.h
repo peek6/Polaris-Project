@@ -4,6 +4,7 @@
 #include "UObject/NoExportTypes.h"
 #include "AssignPerMaterialStruct.h"
 #include "DesignAssignStruct.h"
+#include "ItemAddAuraEffect.h"
 #include "PartsSlotItemSetStructArray.h"
 #include "CustomizeItem.generated.h"
 
@@ -34,6 +35,9 @@ public:
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
     FString ParentCustomizeItemName;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    FItemAddAuraEffect AddAuraEffect;
 
     UCustomizeItem();
 

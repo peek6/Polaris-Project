@@ -65,6 +65,12 @@ public:
     bool IsCastContactShadow;
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool IsGlassesEyeBlashOpacityZero_L;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool IsGlassesEyeBlashOpacityZero_R;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
     TArray<UPhoenixSkeletonBinary*> PhoenixSkeletonBinariesItem;
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))

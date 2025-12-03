@@ -35,11 +35,14 @@ public:
     void PlayStartEffect(USkeletalMeshComponent* attach_component);
     
     UFUNCTION(BlueprintCallable)
-    void PlayFrameEffect(int32 motion_id, USkeletalMeshComponent* attach_component);
+    bool PlayFrameEffect(int32 motion_id, USkeletalMeshComponent* attach_component);
     
     UFUNCTION(BlueprintCallable)
     void PlayEndEffect(USkeletalMeshComponent* attach_component);
     
+    UFUNCTION(BlueprintCallable)
+    void OnReplayJumpEvent();
+
     UFUNCTION(BlueprintCallable)
     void DetachComponent(bool is_detach_start_effect, bool is_detach_end_effect, bool is_detach_frame_effect);
     

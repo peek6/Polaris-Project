@@ -15,10 +15,14 @@ void UMissileEffectComponent::SetActiveEffect(bool is_active_start_effect, bool 
 void UMissileEffectComponent::PlayStartEffect(USkeletalMeshComponent* attach_component) {
 }
 
-void UMissileEffectComponent::PlayFrameEffect(int32 motion_id, USkeletalMeshComponent* attach_component) {
+bool UMissileEffectComponent::PlayFrameEffect(int32 motion_id, USkeletalMeshComponent* attach_component) {
+	return false;
 }
 
 void UMissileEffectComponent::PlayEndEffect(USkeletalMeshComponent* attach_component) {
+}
+
+void UMissileEffectComponent::OnReplayJumpEvent() {
 }
 
 void UMissileEffectComponent::DetachComponent(bool is_detach_start_effect, bool is_detach_end_effect, bool is_detach_frame_effect) {

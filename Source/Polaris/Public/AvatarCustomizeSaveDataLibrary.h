@@ -11,6 +11,9 @@ public:
     UAvatarCustomizeSaveDataLibrary();
 
     UFUNCTION(BlueprintCallable)
+    static void SwapSlot(int32 src_slot, int32 dst_slot);
+
+    UFUNCTION(BlueprintCallable)
     static void SetThumbnailSaveData(const TArray<uint8>& Data, int32 slot_no);
     
     UFUNCTION(BlueprintCallable)

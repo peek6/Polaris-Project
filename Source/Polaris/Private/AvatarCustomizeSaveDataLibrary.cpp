@@ -3,6 +3,9 @@
 UAvatarCustomizeSaveDataLibrary::UAvatarCustomizeSaveDataLibrary() {
 }
 
+void UAvatarCustomizeSaveDataLibrary::SwapSlot(int32 src_slot, int32 dst_slot) {
+}
+
 void UAvatarCustomizeSaveDataLibrary::SetThumbnailSaveData(const TArray<uint8>& Data, int32 slot_no) {
 }
 

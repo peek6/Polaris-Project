@@ -40,6 +40,9 @@ void UPolarisBlueprintLibrary::SetShadowMaxResolusionPreset(EPolarisShadowMaxRes
 void UPolarisBlueprintLibrary::SetResolutionUpscaling(EPolarisResolutionUpscaling upscaling) {
 }
 
+void UPolarisBlueprintLibrary::SetRequestTrace(const int32& player_id, const int32& param_a, const int32& param_b, const int32& param_c, const int32& param_d) {
+}
+
 void UPolarisBlueprintLibrary::SetForceMipLevelsToBeResident(UTexture2D* pTex, float Second) {
 }
 

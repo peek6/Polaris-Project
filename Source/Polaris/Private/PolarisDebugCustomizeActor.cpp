@@ -7,8 +7,12 @@ APolarisDebugCustomizeActor::APolarisDebugCustomizeActor(const FObjectInitialize
     this->isBodyPrpEnable = true;
     this->isSqueezeEnable = true;
     this->isAbilityOffsetEnable = false;
+    this->isEnableSweatRealTime = false;
+    this->IsDynamicBoneEnable = true;
     this->isDemo = false;
     this->isOnlyLaunchItem = true;
+    this->isKeepItem = true;
+    this->DispCharacterSelectOrder = 0;
     this->FighterId = 0;
     this->ItemPrefabSets.AddDefaulted(17);
     this->ItemPrefabAccSets.AddDefaulted(2);
@@ -17,9 +21,9 @@ APolarisDebugCustomizeActor::APolarisDebugCustomizeActor(const FObjectInitialize
     this->MyPolarisCharacterActor = NULL;
     this->IsSuntan = false;
     this->isDevilSkin = false;
-    this->SweatBlend = 0;
-    this->Wetness = 0;
-    this->DirtyBlend = 0;
+    this->sweatRatio = 0;
+    this->wetRatio = 0;
+    this->dirtyRatio = 0;
     this->targetCustomizeSet = NULL;
     this->createCustomizeSetCharacter = 0;
     this->createCustomizeSetPath = TEXT("/Game/Character/Item/Customize_Set");
