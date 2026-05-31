@@ -71,6 +71,12 @@ public:
     bool IsGlassesEyeBlashOpacityZero_R;
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool IsFullHeadDepMeshColorFromFullBodyColor;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    int32 IsFullHeadDepMeshColorFromFullBodyColorMatID;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
     TArray<UPhoenixSkeletonBinary*> PhoenixSkeletonBinariesItem;
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))

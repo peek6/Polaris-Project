@@ -8,6 +8,8 @@ UBaseItem::UBaseItem() {
     this->IsCastContactShadow = true;
     this->IsGlassesEyeBlashOpacityZero_L = false;
     this->IsGlassesEyeBlashOpacityZero_R = false;
+    this->IsFullHeadDepMeshColorFromFullBodyColor = false;
+    this->IsFullHeadDepMeshColorFromFullBodyColorMatID = 0;
     this->CatwalkClothCollisionAssetItem = NULL;
     this->CatwalkClothCollisionOverrideDataAsset = NULL;
     this->CatwalkClothCollisionAttachmentDataAsset = NULL;
